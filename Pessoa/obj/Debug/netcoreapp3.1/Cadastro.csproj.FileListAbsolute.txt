@@ -1,0 +1,9 @@
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.deps.json
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.dll
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.pdb
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.csprojAssemblyReference.cache
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.AssemblyInfoInputs.cache
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.AssemblyInfo.cs
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.csproj.CoreCompileInputs.cache
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.dll
+C:\Users\Gisele\Documents\William\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.pdb
