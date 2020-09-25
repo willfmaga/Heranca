@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4fPGge5x3q8s8rSw+EbKEdMyMBIQu8wsooF13+XluM+5vlDszgDXee2J12mwluB4ml2N/AaWk/HZP6rKhqTRPA==",
+  "dgSpecHash": "lHhLpdyTlzMcqvOC0zECKFIjF7KcIE7niNPsW5CehWYk3Q4VCUOZxarBrN3SQanYQdw3MK5SGzk8soNgSb4HVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Heranca\\Pessoa\\Cadastro.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\Cadastro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gisele\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

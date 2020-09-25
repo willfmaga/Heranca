@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FWyobSyCjhjOJJIFT47+JIujmkFS2mQ65nzLs8F2MKwr1L6iCmIMfkb2v7op9BAzjUfCyReEpdxxW1otKs4Vug==",
+  "dgSpecHash": "6WjJlxOWPURMNlMzMMZvx6Mf2TMCLSxpg0Y8yhDjH+wfJgCHoD8ihxBo5w/qZEaxyiE4ZSPWs2xgDqwY7aBKoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Heranca\\WindowsFormCadastro\\WindowsFormCadastro.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\WindowsFormCadastro\\WindowsFormCadastro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gisele\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

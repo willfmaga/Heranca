@@ -30,16 +30,16 @@
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDtNascimento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCorOlhos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtRG = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -62,19 +62,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome:";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(342, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtNome.Location = new System.Drawing.Point(342, 86);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(277, 27);
+            this.txtNome.TabIndex = 2;
             // 
-            // textBox2
+            // txtSobrenome
             // 
-            this.textBox2.Location = new System.Drawing.Point(342, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtSobrenome.Location = new System.Drawing.Point(342, 119);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(277, 27);
+            this.txtSobrenome.TabIndex = 2;
             // 
             // label2
             // 
@@ -85,12 +85,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Sobrenome";
             // 
-            // textBox3
+            // txtDtNascimento
             // 
-            this.textBox3.Location = new System.Drawing.Point(342, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 2;
+            this.txtDtNascimento.Location = new System.Drawing.Point(342, 152);
+            this.txtDtNascimento.Name = "txtDtNascimento";
+            this.txtDtNascimento.Size = new System.Drawing.Size(125, 27);
+            this.txtDtNascimento.TabIndex = 2;
             // 
             // label3
             // 
@@ -101,12 +101,12 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "DtNascimento";
             // 
-            // textBox4
+            // txtCorOlhos
             // 
-            this.textBox4.Location = new System.Drawing.Point(342, 185);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 2;
+            this.txtCorOlhos.Location = new System.Drawing.Point(342, 185);
+            this.txtCorOlhos.Name = "txtCorOlhos";
+            this.txtCorOlhos.Size = new System.Drawing.Size(125, 27);
+            this.txtCorOlhos.TabIndex = 2;
             // 
             // label4
             // 
@@ -126,19 +126,19 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "RG";
             // 
-            // textBox5
+            // txtRG
             // 
-            this.textBox5.Location = new System.Drawing.Point(341, 249);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 2;
+            this.txtRG.Location = new System.Drawing.Point(341, 249);
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(125, 27);
+            this.txtRG.TabIndex = 2;
             // 
-            // textBox6
+            // txtCPF
             // 
-            this.textBox6.Location = new System.Drawing.Point(341, 216);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 27);
-            this.textBox6.TabIndex = 2;
+            this.txtCPF.Location = new System.Drawing.Point(341, 216);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(125, 27);
+            this.txtCPF.TabIndex = 2;
             // 
             // label6
             // 
@@ -155,16 +155,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.txtRG);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCorOlhos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDtNascimento);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSobrenome);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCadastrar);
             this.Name = "Form1";
@@ -178,16 +178,16 @@
 
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtSobrenome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDtNascimento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCorOlhos;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtRG;
+        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label6;
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "H2QjFY6Kgk0xMpjF7xHRPGY8fJQ7yHrBOhNPIscmBQNEnv3JY/8NpfgRGp9uhmMNZRlBNdkwKgU2BMza70i/YQ==",
+  "dgSpecHash": "dsNVBgE8l7Gtz98G0JhO465sra2C095mrhZAQTCljM1qop0TzIAe7Keq04bkDjK3wM5fE2AXoezAh0YRJGg9aA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Heranca\\Heranca\\Heranca.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Heranca\\Heranca.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gisele\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

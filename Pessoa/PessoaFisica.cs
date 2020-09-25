@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text.Json.Serialization;
 
 namespace Aula
 {
@@ -14,5 +16,6 @@ namespace Aula
         public string CPF { get; set; }
 
         public string RG { get; set; }
+
     }
 }

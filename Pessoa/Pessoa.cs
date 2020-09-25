@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
+using System.Text.Json.Serialization;
 
 namespace Aula
 {
@@ -26,6 +29,13 @@ namespace Aula
                 return DateTime.Now.Year - DataNascimento.Year;
             }
 
+        }
+
+        public void Gravar()
+        {
+            //salva em um arquivo de txt
+            File.WriteAllText(@"c:\Temp\CadastroUsuarios.txt",
+                              JsonConvert.SerializeObject(this));
         }
 
     }

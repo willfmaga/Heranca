@@ -18,12 +18,16 @@ namespace WindowsFormCadastro
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PessoaFisica pessoaFisica = new PessoaFisica(textBox1.Text,
-                                                         Convert.ToDateTime(textBox2.Text),
-                                                         textBox3.Text,
-                                                         textBox4.Text, 
-                                                         textBox5.Text,
-                                                         textBox6.Text)                                                         );
+            
+            PessoaFisica pessoaFisicaForm = new PessoaFisica(txtNome.Text,
+                                                         Convert.ToDateTime(txtDtNascimento.Text),
+                                                         txtSobrenome.Text,
+                                                         txtRG.Text,
+                                                         txtCPF.Text,
+                                                         txtCorOlhos.Text);
+
+            pessoaFisicaForm.Gravar();
+
         }
     }
 }
