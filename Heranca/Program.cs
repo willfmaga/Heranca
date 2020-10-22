@@ -40,12 +40,49 @@ namespace Aula
             }
             else if (escolha == "2")
             {
-                Escrever("Estou na escolha 2");
+                Escrever("Digite seu nome");
+                string n = Console.ReadLine();
+
+                Escrever("Digite seu sobrenome");
+                string sobrenome = Console.ReadLine();
+
+                Escrever("Digite seu Data Nascimento");
+                DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
+
+                Escrever("Digite a cor dos seus olhos");
+                string olhos = Console.ReadLine();
+
+                Escrever("Digite o CNPJ");
+                string cnpj = Console.ReadLine();
+
+                PessoaJuridica pessoaJuridica = new PessoaJuridica(n, dtnascimento, sobrenome, cnpj, olhos);
+
+                pessoaJuridica.Gravar();
 
             }
             else if (escolha == "3")
             {
-                Escrever("Estou na escolha 3");
+                Escrever("Digite seu nome");
+                string n = Console.ReadLine();
+
+                Escrever("Digite seu sobrenome");
+                string sobrenome = Console.ReadLine();
+
+                Escrever("Digite seu Data Nascimento");
+                DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
+
+                Escrever("Digite a cor dos seus olhos");
+                string olhos = Console.ReadLine();
+
+                Escrever("Digite o RG");
+                string rg = Console.ReadLine();
+
+                Escrever("Digite o CPF");
+                string cpf = Console.ReadLine();
+
+                PessoaFisica pf = new PessoaFisica(n, dtnascimento, sobrenome, cpf, rg, olhos);
+
+                pf.Gravar();
 
             }
 

@@ -11,6 +11,7 @@ namespace Aula
                               : base(nome, dataNascimento, sobrenome, cordosolhos)
         {
             CNPJ = cnpj;
+
         }
 
         public string CNPJ { get; set; }
