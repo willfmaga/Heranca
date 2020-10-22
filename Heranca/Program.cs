@@ -9,7 +9,7 @@ namespace Aula
 
             Escrever("Bem vindo ao sistema de cadastro pessoas");
 
-            Escrever("Escolha uma opção");
+            Escrever("Escolha uma das opcoes:");
             Escrever("");
             Escrever("1 - Pessoa");
             Escrever("2 - Pessoa Juridica");
