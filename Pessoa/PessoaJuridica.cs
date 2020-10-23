@@ -14,7 +14,7 @@ namespace Aula
 
         }
 
-        public string CNPJ { get; set; }
+        public string CNPJ { get; private set; }
 
     }
 }
