@@ -19,7 +19,7 @@ namespace Aula
             Escrever("Digite o cargo");
             Escrever("1 - Vendedor");
             Escrever("2 - ADM");
-            Escrever("3-Analista TI"); //alteração teste para verificar mudanças na branch do servidor//
+            Escrever("3 - Analista TI");
 
             string escolha = Console.ReadLine();
 
