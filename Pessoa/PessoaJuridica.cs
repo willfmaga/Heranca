@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Aula
 {
-    public class PessoaJuridica : Pessoa //teste mudença Branch PessoaJuridica
+    public class PessoaJuridica : Pessoa //teste mudança Branch PessoaJuridica
     {
         public PessoaJuridica(string nome, DateTime dataNascimento, 
                               string sobrenome, string cnpj, string cordosolhos) 
