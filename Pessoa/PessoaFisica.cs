@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Aula
 {
-    public class PessoaFisica : Pessoa
+    public class PessoaFisica : Pessoa      //teste mudança branch
     {
         public PessoaFisica(string nome, DateTime dataNascimento,
                             string sobrenome, string cpf, string rg, string cordosolhos)
