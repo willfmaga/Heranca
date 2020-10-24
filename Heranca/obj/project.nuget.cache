@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pqx8+wqoRmMdY2CyyLFlH80kgKpEUaDDD26tVE+pckY4vPr5pc2gfDpvHdocNWITet3NSTEyUe0Tc7SY+gfBrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-CargoeSalario\\Heranca\\Heranca.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Portaria1 Unlimited\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

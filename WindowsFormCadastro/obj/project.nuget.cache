@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZO3d+BhwGGsHnxZG7nfcsxeJvidBlEzoVXYjadWPk7HXMkg6OD6gUw8AkQ3U+j3DiUqPwS9UsTT46bM1a3uQ/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-CargoeSalario\\WindowsFormCadastro\\WindowsFormCadastro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Portaria1 Unlimited\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
