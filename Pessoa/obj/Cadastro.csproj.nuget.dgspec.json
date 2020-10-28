@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\Cadastro.csproj": {}
+    "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\Cadastro.csproj": {
+    "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\Cadastro.csproj",
+        "projectUniqueName": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
         "projectName": "Cadastro",
-        "projectPath": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\Cadastro.csproj",
-        "packagesPath": "C:\\Users\\Gisele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gisele\\Documents\\William\\Git\\Heranca\\Pessoa\\obj\\",
+        "projectPath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
+        "packagesPath": "C:\\Users\\Portaria1 Unlimited\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gisele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Portaria1 Unlimited\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

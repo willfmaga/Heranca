@@ -7,6 +7,8 @@ namespace Aula
 {
     public class Pessoa
     {
+        const string PATHFILE = @"c:\CADASTROPESSOAL\CadastroUsuario.txt";
+        const string PASTA = @"c:\CADASTROPESSOAL";
         public Pessoa(string nome, DateTime dataNascimento, string sobrenome, string cordosolhos)
         {
             Nome = nome;
@@ -33,9 +35,19 @@ namespace Aula
 
         public void Gravar()
         {
+            if (!Directory.Exists(PASTA))
+            {
+                Directory.CreateDirectory(PASTA);
+            }
+
+            Console.WriteLine(File.Exists(PATHFILE));
+            File.WriteAllText(PATHFILE, "CadastroUsuario");
+            Console.WriteLine(File.Exists(PATHFILE));
+            
+
             //salva em um arquivo de txt
-            File.WriteAllText(@"c:\Temp\CadastroUsuarios.txt",
-                              JsonConvert.SerializeObject(this));
+            File.WriteAllText(PATHFILE, JsonConvert.SerializeObject(this) + "\n");
+
         }
 
     }
