@@ -16,7 +16,7 @@ namespace Aula
 
         private static void CadastroCargo()
         {
-            Escrever("Digite o Cargo Exercido ou Informações dos Cargos Exercidos............:");
+            Escrever("Digite o Cargo Exercido ou Informações dos Cargos Exercidos:");
             Escrever("1 - Vendedor");
             Escrever("2 - ADM");
             Escrever("3 - Analista TI");
@@ -63,7 +63,7 @@ namespace Aula
 
             Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
 
-            Escrever("Seu Salário Este Mês Mais Comissão Será de................:");
+            Escrever("Seu Salário Este Mês Mais Comissão Será de:");
             Escrever(vend.CalculaSalario().ToString());
             vend.Gravar();
         }
@@ -81,12 +81,12 @@ namespace Aula
             Escrever("Digite o Salário:");
             decimal salario = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("Digite os Dias Trabalhados");
+            Escrever("Se faltou, digite a quantidae de dias:");
             int diasFalta = Convert.ToInt32(Console.ReadLine());
 
             ADM adm = new ADM(nome, descricao, salario, diasFalta);
             
-            Escrever("Seu Salário Este Mês Será de................:");
+            Escrever("Seu Salário Este Mês Será de:");
             Escrever(adm.CalculaSalario().ToString());
             adm.Gravar();
         }
@@ -112,7 +112,7 @@ namespace Aula
 
             AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
             
-            Escrever("Seu Salário Este Mês Mais Horas Extras Será de................:");
+            Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
             Escrever(TI.CalculaSalario().ToString());
             TI.Gravar();
         }
