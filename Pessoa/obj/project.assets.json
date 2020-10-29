@@ -52,19 +52,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Portaria1 Unlimited\\.nuget\\packages\\": {}
+    "C:\\Users\\Mario Torres\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
+      "projectUniqueName": "C:\\Users\\Mario Torres\\Documents\\Visual Studio 2019\\Projects Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
       "projectName": "Cadastro",
-      "projectPath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
-      "packagesPath": "C:\\Users\\Portaria1 Unlimited\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Portaria1 Unlimited\\Documents\\Visual Studio 2019\\Projects_Paralelos\\Heranca-master\\Pessoa\\obj\\",
+      "projectPath": "C:\\Users\\Mario Torres\\Documents\\Visual Studio 2019\\Projects Paralelos\\Heranca-master\\Pessoa\\Cadastro.csproj",
+      "packagesPath": "C:\\Users\\Mario Torres\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mario Torres\\Documents\\Visual Studio 2019\\Projects Paralelos\\Heranca-master\\Pessoa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Portaria1 Unlimited\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mario Torres\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
