@@ -1,5 +1,6 @@
 ﻿using Cadastro;
 using System;
+using System.IO;
 
 namespace Aula
 {
@@ -20,6 +21,7 @@ namespace Aula
             Escrever("1 - Vendedor");
             Escrever("2 - ADM");
             Escrever("3 - Analista TI");
+
 
             string escolha = Console.ReadLine();
 
@@ -139,6 +141,13 @@ namespace Aula
             else if (escolha == "3")
             {
                 CadastroPessoaFisicaCompleto();
+            }else if (escolha != "1" && escolha != "2" && escolha != "3")
+
+                Console.Clear();
+            {
+                Console.WriteLine("Opção Inválida!");
+                CadastroPessoal();
+                
             }
         }
 
