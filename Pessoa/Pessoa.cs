@@ -51,7 +51,7 @@ namespace Aula
 
         }
         /*
-        public class ConversionToDateTime
+        public class ConversionToDateTime               //TENTATIVA DE CONVERSÃO DO DATETIME PARA EVITAR ERROS DE DIGITAÇÃO DO USUÁRIO.
         {
             public static void Main()
             {
