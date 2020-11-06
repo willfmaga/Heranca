@@ -49,6 +49,7 @@ namespace Aula
             }
             while (escolha == "4")
             {
+                Console.Clear();
                 Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
                 Environment.Exit(0);
             }
@@ -138,6 +139,7 @@ namespace Aula
             Escrever("1 - Pessoa");
             Escrever("2 - Pessoa Juridica");
             Escrever("3 - Pessoa Fisica");
+            Escrever("4 - Sair");
 
             string escolha = Console.ReadLine();
 
@@ -152,67 +154,73 @@ namespace Aula
             else if (escolha == "3")
             {
                 CadastroPessoaFisicaCompleto();
-            }else if (escolha != "1" && escolha != "2" && escolha != "3")
-                
+            } else if (escolha != "1" && escolha != "2" && escolha != "3")
+
             {
                 Console.Clear();
                 Console.WriteLine("***Opção Inválida!***");
-                CadastroPessoal();
             }
-                CadastroCargo();
+
+            while (escolha == "4")
+            {
+                Console.Clear();
+                Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
+                Environment.Exit(0);
+            }
+
         }
         private static void CadastroPessoaFisicaCompleto()
         {
-            Escrever("Digite seu nome");
+            Escrever("Digite seu nome:");
             string n = Console.ReadLine();
             n = n.ToUpper();
 
-            Escrever("Digite seu sobrenome");
+            Escrever("Digite seu sobrenome:");
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
 
-            Escrever("Digite seu Data Nascimento");
+            Escrever("Digite sua Data de Nascimento:");
             DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite a cor dos seus olhos");
-            string olhos = Console.ReadLine();
-            olhos = olhos.ToUpper();
+            Escrever("Digite sua Nacionalidade:");
+            string nacionalidade = Console.ReadLine();
+            nacionalidade = nacionalidade.ToUpper();
 
-            Escrever("Digite o RG");
+            Escrever("Digite o RG:");
             string rg = Console.ReadLine();
             rg = rg.ToUpper();
             
-            Escrever("Digite o CPF");
+            Escrever("Digite o CPF:");
             string cpf = Console.ReadLine();
             cpf = cpf.ToUpper();
 
-            PessoaFisica pf = new PessoaFisica(n, dtnascimento, sobrenome, cpf, rg, olhos);
+            PessoaFisica pf = new PessoaFisica(n, dtnascimento, sobrenome, cpf, rg, nacionalidade);
 
             pf.Gravar();
         }
 
         private static void CadastroPessoaJuridicaCompleto()
         {
-            Escrever("Digite seu nome");
+            Escrever("Digite seu nome:");
             string n = Console.ReadLine();
             n = n.ToUpper();
 
-            Escrever("Digite seu sobrenome");
+            Escrever("Digite seu sobrenome:");
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
 
-            Escrever("Digite seu Data Nascimento");
+            Escrever("Digite sua Data de Nascimento:");
             DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite a cor dos seus olhos");
-            string olhos = Console.ReadLine();
-            olhos = olhos.ToUpper();
+            Escrever("Digite sua Nacionalidade:");
+            string nacionalidade = Console.ReadLine();
+            nacionalidade = nacionalidade.ToUpper();
 
-            Escrever("Digite o CNPJ");
+            Escrever("Digite o CNPJ:");
             string cnpj = Console.ReadLine();
             cnpj = cnpj.ToUpper();
 
-            PessoaJuridica pj = new PessoaJuridica(n, dtnascimento, sobrenome, cnpj, olhos);
+            PessoaJuridica pj = new PessoaJuridica(n, dtnascimento, sobrenome, cnpj, nacionalidade);
 
             pj.Gravar();
         }
@@ -227,14 +235,14 @@ namespace Aula
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
             
-            Escrever("Digite seu Data Nascimento");
+            Escrever("Digite sua Data de Nascimento");
             DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite a cor dos seus olhos");
-            string olhos = Console.ReadLine();
-            olhos = olhos.ToUpper();
+            Escrever("Digite sua Nacionalidade:");
+            string nacionalidade = Console.ReadLine();
+            nacionalidade = nacionalidade.ToUpper();
           
-            Pessoa pes = new Pessoa(n, dtnascimento, sobrenome, olhos);
+            Pessoa pes = new Pessoa(n, dtnascimento, sobrenome, nacionalidade);
 
             pes.Gravar();
         }
