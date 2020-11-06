@@ -8,14 +8,14 @@ namespace Aula
     public class Pessoa
     {
 
-        const string PATHFILE = @"c:\CADASTROPESSOAL\CadastroUsuario.txt";
-        const string PASTA = @"c:\CADASTROPESSOAL";
-        public Pessoa(string nome, DateTime dataNascimento, string sobrenome, string cordosolhos)
+        const string PATHFILE = @"c:\CADASTRO PESSOAL\CadastroUsuario.txt";
+        const string PASTA = @"c:\CADASTRO PESSOAL";
+        public Pessoa(string nome, DateTime dataNascimento, string sobrenome, string nacionalidade)
         {
             Nome = nome;
             DataNascimento = dataNascimento;
             Sobrenome = sobrenome;
-            CorDosOlhos = cordosolhos;
+            Nacionalidade = nacionalidade;
         }
 
         public string Nome { get; private set; }
@@ -24,7 +24,7 @@ namespace Aula
 
         public string Sobrenome { get; private set; }
 
-        public string CorDosOlhos { get; private set; }
+        public string Nacionalidade { get; private set; }
         public int Idade
         {
             get
@@ -33,6 +33,7 @@ namespace Aula
 
             }
         }
+
 
         public void Gravar()
         {
@@ -50,25 +51,25 @@ namespace Aula
             File.WriteAllText(PATHFILE, JsonConvert.SerializeObject(this) + "\n");
 
         }
-        /*
+        
         public class ConversionToDateTime               //TENTATIVA DE CONVERSÃO DO DATETIME PARA EVITAR ERROS DE DIGITAÇÃO DO USUÁRIO.
         {
-            public static void Main()
+            public static void ConvertToDateTime()
             {
                 string dateString = null;
 
-                // Convert a null string.
+                // Converte um null string.
                 ConvertToDateTime(dateString);
 
-                // Convert an empty string.
+                // Converte um empty string.
                 dateString = String.Empty;
                 ConvertToDateTime(dateString);
 
-                // Convert a non-date string.
-                dateString = "not a date";
+                // Converte um non-date string.
+                dateString = "não é uma data";
                 ConvertToDateTime(dateString);
 
-                // Try to convert various date strings.
+                // Tentativa de converter varios date strings.
                 dateString = "05/01/1996";
                 ConvertToDateTime(dateString);
                 dateString = "Tue Apr 28, 2009";
@@ -79,10 +80,10 @@ namespace Aula
                 ConvertToDateTime(dateString);
                 dateString = "17:32:47.003";
                 ConvertToDateTime(dateString);
-                // Convert a string returned by DateTime.ToString("R").
+                // Converte uma string returnado pelo DateTime.ToString("R").
                 dateString = "Sat, 10 May 2008 14:32:17 GMT";
                 ConvertToDateTime(dateString);
-                // Convert a string returned by DateTime.ToString("o").
+                // Converte uma string retornado pelo DateTime.ToString("o").
                 dateString = "2009-05-01T07:54:59.9843750-04:00";
                 ConvertToDateTime(dateString);
             }
@@ -92,18 +93,18 @@ namespace Aula
                 try
                 {
                     convertedDate = Convert.ToDateTime(dtnascimento);
-                    Console.WriteLine("'{0}' converts to {1} {2} time.",
+                    Console.WriteLine("'{0}' converter para {1} {2} time.",
                                       dtnascimento, convertedDate,
                                       convertedDate.Kind.ToString());
                 }
-                catch (FormatException)
+                catch (FormatException data)
                 {
-                    Console.WriteLine("'{0}' is not in the proper format.", dtnascimento);
+                    Console.WriteLine("'{0}' A Data não está no formato adequado.", data.Message); 
                 }
         
             }
         }
 
-        */
+        
     }
 }

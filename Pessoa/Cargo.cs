@@ -7,18 +7,18 @@ namespace Cadastro
 {
     public class Cargo
     {
-        const string PATHFILE = @"c:\CADASTROFUNCIONARIO\CadastroFuncionario.txt";
-        const string PASTA = @"c:\CADASTROFUNCIONARIO";
-        public Cargo(string nome, string descricao, decimal salario)
+        const string PATHFILE = @"c:\CADASTRO FUNCIONARIO\CadastroFuncionario.txt";
+        const string PASTA = @"c:\CADASTRO FUNCIONARIO";
+        public Cargo(string nomeDoCargo, string descricao, decimal salario)
         {
-            this.Nome = nome;
-            this.Descricao = descricao;
+            this.NomeDoCargo = nomeDoCargo;
+            this.DescricaoDoCargo = descricao;
             this.Salario = salario;
            
         }
 
-        public string Nome { get; private set; }
-        public string Descricao { get; private set; }
+        public string NomeDoCargo { get; private set; }
+        public string DescricaoDoCargo { get; private set; }
         public decimal Salario { get; private set; }
 
         public virtual decimal CalculaSalario()
