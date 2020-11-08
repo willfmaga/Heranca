@@ -52,7 +52,7 @@ namespace Aula
 
                 default:
                     Console.Clear();
-                    Console.WriteLine("***Cargo Não Cadasatrado!***");
+                    Console.WriteLine("***Cargo Não Cadastrado!***");
                     break;
             }
             CadastroCargo();
