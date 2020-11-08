@@ -53,7 +53,7 @@ namespace Aula
 
         }
 
-        public class ConversionToDateTime                                                                     //tentando acertar o Try Catch com as conversões do DateTime.Convert
+        public class ConversionToDateTime                                      //tentando acertar o Try Catch com as conversões do DateTime.Convert
         {
             public static void ConvertToDateTime(string dtnascimento)
             {
