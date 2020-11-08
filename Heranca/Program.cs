@@ -40,6 +40,14 @@ namespace Aula
 
                 case "3":
                     CadastroAnalistaTICompleto();
+
+                    break;
+                case "4":
+                     {
+                        Console.Clear();
+                        Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
+                        Environment.Exit(0);
+                     }
                     break;
 
                 default:
@@ -47,14 +55,7 @@ namespace Aula
                     Console.WriteLine("***Cargo Não Cadasatrado!***");
                     break;
             }
-            while (escolha == "4")
-            {
-                Console.Clear();
-                Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
-                Environment.Exit(0);
-            }
-             CadastroCargo();
-
+            CadastroCargo();
         }
         private static void CadastroVendedorCompleto()
         {
@@ -80,6 +81,7 @@ namespace Aula
             Escrever("Seu Salário Este Mês Mais Comissão Será de:");
             Escrever(vend.CalculaSalario().ToString());
             vend.Gravar();
+
         }
 
         private static void CadastroADMCompleto()
@@ -103,6 +105,7 @@ namespace Aula
             Escrever("Seu Salário Este Mês Será de:");
             Escrever(adm.CalculaSalario().ToString());
             adm.Gravar();
+
         }
 
         private static void CadastroAnalistaTICompleto()
@@ -129,7 +132,9 @@ namespace Aula
             Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
             Escrever(TI.CalculaSalario().ToString());
             TI.Gravar();
+
         }
+
         private static void CadastroPessoal()
         {
             Escrever("Bem vindo ao sistema de cadastro pessoas");
@@ -159,6 +164,7 @@ namespace Aula
             {
                 Console.Clear();
                 Console.WriteLine("***Opção Inválida!***");
+                CadastroPessoal();
             }
 
             while (escolha == "4")
