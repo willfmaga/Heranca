@@ -25,6 +25,7 @@ namespace Aula
             Escrever("2 - ADM");
             Escrever("3 - Analista TI");
             Escrever("4 - Sair");
+            Escrever("5 - Voltar Para Cadastro Pessoal");
 
             string escolha = Console.ReadLine();
 
@@ -48,6 +49,11 @@ namespace Aula
                         Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
                         Environment.Exit(0);
                      }
+                    break;
+
+                case "5":
+                    Console.Clear();
+                    CadastroPessoal();
                     break;
 
                 default:
@@ -145,35 +151,42 @@ namespace Aula
             Escrever("2 - Pessoa Juridica");
             Escrever("3 - Pessoa Fisica");
             Escrever("4 - Sair");
+                string escolha = Console.ReadLine();
 
-            string escolha = Console.ReadLine();
-
-            if (escolha == "1")
+            switch (escolha)
             {
-                CadastroPessoaCompleto();
+                case "1":
+                    {
+                        CadastroPessoaCompleto();
+                    }
+                    break;
+                case "2":
+                    {
+                        CadastroPessoaJuridicaCompleto();
+                    }
+                    break;
+
+                case "3":
+                    { 
+                    CadastroPessoaFisicaCompleto();
+                    }
+                    break;
+
+                case "4":
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
+                        Environment.Exit(0);
+                    }
+                    break;
             }
-            else if (escolha == "2")
-            {
-                CadastroPessoaJuridicaCompleto();
-            }
-            else if (escolha == "3")
-            {
-                CadastroPessoaFisicaCompleto();
-            } else if (escolha != "1" && escolha != "2" && escolha != "3")
 
+            if (escolha != "1" && escolha != "2" && escolha != "3")
             {
                 Console.Clear();
                 Console.WriteLine("***Opção Inválida!***");
                 CadastroPessoal();
             }
-
-            while (escolha == "4")
-            {
-                Console.Clear();
-                Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
-                Environment.Exit(0);
-            }
-
         }
         private static void CadastroPessoaFisicaCompleto()
         {
