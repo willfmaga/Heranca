@@ -10,9 +10,17 @@ namespace Aula
                                
                               : base(nome, sobrenome, nacionalidade, dataNascimento)
         {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Nacionalidade = nacionalidade;
             CNPJ = cnpj;
 
         }
+        public string Nome { get; private set; }
+
+        public string Sobrenome { get; private set; }
+
+        public string Nacionalidade { get; private set; }
 
         public string CNPJ { get; private set; }
 
