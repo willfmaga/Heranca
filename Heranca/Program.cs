@@ -92,13 +92,13 @@ namespace Aula
             Escrever("Digite a Porcentagem Ganha por Vendas:");
             decimal porc = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("O Total do seu Salário este Mês é de:");
-            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
-            //exibir aqui o total do salario na tela de carregamento
-            Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc, totalSalario);
+            Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
 
+            Escrever("------------------------------------------------------------------------------------------------------------------------");
             Escrever("Seu Salário Este Mês Mais Comissão Será de:");
+            Console.WriteLine("-------");
             Escrever(vend.CalculaSalario().ToString());
+            Console.WriteLine("-------");
             vend.Gravar();
 
         }
@@ -119,13 +119,14 @@ namespace Aula
             Escrever("Se faltou, digite a quantidae de dias:");
             int diasFalta = Convert.ToInt32(Console.ReadLine());
 
-            Escrever("O Total do seu Salário este Mês é de:");
-            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
-            //exibir aqui o total do salario na tela de carregamento
-            ADM adm = new ADM(nome, descricao, salario, diasFalta, totalSalario);
-            
+            ADM adm = new ADM(nome, descricao, salario, diasFalta);
+
+            Escrever("------------------------------------------------------------------------------------------------------------------------");
             Escrever("Seu Salário Este Mês Será de:");
+            Console.WriteLine("-------");
             Escrever(adm.CalculaSalario().ToString());
+            Console.WriteLine("-------");
+
             adm.Gravar();
 
         }
@@ -149,13 +150,14 @@ namespace Aula
             Escrever("Digite o Total de Dias Trabalhados este Mês:");
             int diasTrabalhados = Convert.ToInt32(Console.ReadLine());
 
-            Escrever("O Total do seu Salário este Mês é de:");
-            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
-            //exibir aqui o total do salario na tela de carregamento
-            AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados,totalSalario);
             
+            AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
+
+            Escrever("------------------------------------------------------------------------------------------------------------------------");
             Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
+            Console.WriteLine("-------");
             Escrever(TI.CalculaSalario().ToString());
+            Console.WriteLine("-------");
             TI.Gravar();
 
         }
