@@ -228,7 +228,7 @@ namespace Aula
             string cpf = Console.ReadLine();
             cpf = cpf.ToUpper();
 
-            PessoaFisica pf = new PessoaFisica(n, dtnascimento, sobrenome, cpf, rg, nacionalidade);
+            PessoaFisica pf = new PessoaFisica(n, sobrenome, cpf, rg, nacionalidade,dtnascimento);
 
             pf.Gravar();
         }
@@ -254,7 +254,7 @@ namespace Aula
             string cnpj = Console.ReadLine();
             cnpj = cnpj.ToUpper();
 
-            PessoaJuridica pj = new PessoaJuridica(n, dtnascimento, sobrenome, cnpj, nacionalidade);
+            PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade,cnpj,dtnascimento);
 
             pj.Gravar();
         }
@@ -276,7 +276,7 @@ namespace Aula
             string nacionalidade = Console.ReadLine();
             nacionalidade = nacionalidade.ToUpper();
           
-            Pessoa pes = new Pessoa(n, dtnascimento, sobrenome, nacionalidade);
+            Pessoa pes = new Pessoa(n, sobrenome, nacionalidade, dtnascimento);
 
             pes.Gravar();
         }
