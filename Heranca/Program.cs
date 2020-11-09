@@ -19,8 +19,8 @@ namespace Aula
 
         private static void CadastroCargo()
         {
-            Escrever("***Bem vindo ao sistema de cadastro Cargos e Salário!***");
-            Escrever("----------------------------");
+            Escrever("\t\t\t\t***Bem vindo ao sistema de cadastro Cargos e Salários!***");
+            Escrever("------------------------------------------------------------------------------------------------------------------------");
             Escrever("Digite o Cargo Exercido:");
             Escrever("----------------------------");
             Escrever("1 - Vendedor");
@@ -30,7 +30,6 @@ namespace Aula
             Escrever("4 - Sair");
             Escrever("5 - Ir Para Cadastro Pessoal");
             Escrever("----------------------------");
-
 
             string escolha = Console.ReadLine();
 
@@ -65,7 +64,13 @@ namespace Aula
                     Console.Clear();
                     Console.WriteLine("***Cargo Não Cadastrado!***");
                     break;
+
+                    
             }
+            Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
+            Console.ReadKey();
+            Console.Clear();
+
             CadastroCargo();
         }
         private static void CadastroVendedorCompleto()
@@ -87,7 +92,10 @@ namespace Aula
             Escrever("Digite a Porcentagem Ganha por Vendas:");
             decimal porc = Convert.ToDecimal(Console.ReadLine());
 
-            Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
+            Escrever("O Total do seu Salário este Mês é de:");
+            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
+            //exibir aqui o total do salario na tela de carregamento
+            Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc, totalSalario);
 
             Escrever("Seu Salário Este Mês Mais Comissão Será de:");
             Escrever(vend.CalculaSalario().ToString());
@@ -111,7 +119,10 @@ namespace Aula
             Escrever("Se faltou, digite a quantidae de dias:");
             int diasFalta = Convert.ToInt32(Console.ReadLine());
 
-            ADM adm = new ADM(nome, descricao, salario, diasFalta);
+            Escrever("O Total do seu Salário este Mês é de:");
+            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
+            //exibir aqui o total do salario na tela de carregamento
+            ADM adm = new ADM(nome, descricao, salario, diasFalta, totalSalario);
             
             Escrever("Seu Salário Este Mês Será de:");
             Escrever(adm.CalculaSalario().ToString());
@@ -130,7 +141,7 @@ namespace Aula
             descricao = descricao.ToUpper();
 
             Escrever("Digite o Salário:");
-            decimal salario = Convert.ToDecimal(Console.ReadLine());
+            decimal salario = Convert.ToDecimal(Console.ReadLine());      
 
             Escrever("Digite o Total de Horas Extras Feitas este Mês:");
             int horasExtras = Convert.ToInt32(Console.ReadLine());
@@ -138,7 +149,10 @@ namespace Aula
             Escrever("Digite o Total de Dias Trabalhados este Mês:");
             int diasTrabalhados = Convert.ToInt32(Console.ReadLine());
 
-            AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
+            Escrever("O Total do seu Salário este Mês é de:");
+            decimal totalSalario = Convert.ToInt32(Console.ReadLine());
+            //exibir aqui o total do salario na tela de carregamento
+            AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados,totalSalario);
             
             Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
             Escrever(TI.CalculaSalario().ToString());
@@ -148,8 +162,8 @@ namespace Aula
 
         private static void CadastroPessoal()
         {
-            Escrever("***Bem vindo ao sistema de cadastro de Pessoal!***");
-            Escrever("---------------------------");
+            Escrever("\t\t\t\t***Bem vindo ao sistema de cadastro de Pessoal!***");
+            Escrever("------------------------------------------------------------------------------------------------------------------------");
             Escrever("Escolha uma das opcoes:");
             Escrever("---------------------------");
             Escrever("1 - Pessoa");
@@ -202,6 +216,9 @@ namespace Aula
                 Console.WriteLine("***Opção Inválida!***");
                 CadastroPessoal();
             }
+            Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
+            Console.ReadKey();
+            Console.Clear();
         }
         private static void CadastroPessoaFisicaCompleto()
         {
