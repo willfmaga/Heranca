@@ -9,6 +9,7 @@ namespace Cadastro
     {
         const string PATHFILE = @"c:\CADASTRO FUNCIONARIO\CadastroFuncionario.txt";
         const string PASTA = @"c:\CADASTRO FUNCIONARIO";
+
         public Cargo(string nomeDoCargo, string descricao, decimal salario)
         {
             this.NomeDoCargo = nomeDoCargo;

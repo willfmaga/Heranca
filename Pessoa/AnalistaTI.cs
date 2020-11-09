@@ -7,16 +7,19 @@ namespace Cadastro
     public class AnalistaTI : Cargo
     {
 
-        public AnalistaTI(string nome, string descricao, decimal salario, int horasExtras, int diasTrabalhados) 
-            : base(nome, descricao, salario)
+        public AnalistaTI(string nomeDoCargo, string descricao, decimal salario, int horasExtras, int diasTrabalhados) 
+            : base(nomeDoCargo, descricao, salario)
             
         {
+            NomeDoCargo = nomeDoCargo;
+            DescricaoDoCargo = descricao;
             HorasExtras = horasExtras;
             DiasTrabalhados = diasTrabalhados;
             Salario = salario;
            
         }
-        
+        public string NomeDoCargo { get; private set; }
+        public string DescricaoDoCargo { get; private set; }
         public int HorasExtras { get; private set; }
         public int DiasTrabalhados { get; private set; }
         public new decimal Salario { get; private set; }

@@ -6,12 +6,17 @@ namespace Cadastro
 {
     public class Vendedor:Cargo
     {
-        public Vendedor(string nome, string descricao, decimal salario, decimal totalVendas, decimal porcentagem):base(nome, descricao,salario)
+        public Vendedor(string nomeDoCargo, string descricao, decimal salario, decimal totalVendas, decimal porcentagem):base(nomeDoCargo, descricao,salario)
         {
+            NomeDoCargo = nomeDoCargo;
+            DescricaoDoCargo = descricao;
             TotalVendas = totalVendas;
             Porcentagem = porcentagem;
            
         }
+        public string NomeDoCargo { get; private set; }
+
+        public string DescricaoDoCargo { get; private set; }
 
         public decimal TotalVendas { get; private set; }
 

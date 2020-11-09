@@ -6,10 +6,15 @@ namespace Cadastro
 {
     public class ADM : Cargo
     {
-        public ADM(string nome, string descricao, decimal salario, int diasFalta) : base(nome, descricao, salario)
+        public ADM(string nomeDoCargo, string descricao, decimal salario, int diasFalta) : base(nomeDoCargo, descricao, salario)
         {
+            NomeDoCargo = nomeDoCargo;
+            DescricaoDoCargo = descricao;
             DiasFalta = diasFalta;
         }
+        public string NomeDoCargo { get; private set; }
+        
+        public string DescricaoDoCargo { get; private set; }
 
         public int DiasFalta { get;private set; }
 

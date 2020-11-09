@@ -11,21 +11,22 @@ namespace Aula
 
         const string PATHFILE = @"c:\CADASTRO PESSOAL\CadastroUsuario.txt";
         const string PASTA = @"c:\CADASTRO PESSOAL";
-        public Pessoa(string nome, DateTime dataNascimento, string sobrenome, string nacionalidade)
+        public Pessoa(string nome,  string sobrenome, string nacionalidade, DateTime dataNascimento)
         {
             Nome = nome;
-            DataNascimento = dataNascimento;
             Sobrenome = sobrenome;
             Nacionalidade = nacionalidade;
+            DataNascimento = dataNascimento;
         }
 
         public string Nome { get; private set; }
 
+        public string Sobrenome { get; private set; }
+        
+        public string Nacionalidade { get; private set; }
+
         public DateTime DataNascimento { get; private set; }
 
-        public string Sobrenome { get; private set; }
-
-        public string Nacionalidade { get; private set; }
         public int Idade
         {
             get
