@@ -36,7 +36,6 @@ namespace Aula
             }
         }
 
-
         public void Gravar()
         {
             if (!Directory.Exists(PASTA))
@@ -48,13 +47,18 @@ namespace Aula
             File.WriteAllText(PATHFILE, "CadastroUsuario");
             Console.WriteLine(File.Exists(PATHFILE));
 
-
             //salva em um arquivo de txt
             File.WriteAllText(PATHFILE, JsonConvert.SerializeObject(this) + "\n");
 
+            //ler do arquivo salvo em txt
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+            string text = System.IO.File.ReadAllText( @"c:\CADASTRO PESSOAL\CadastroUsuario.txt");
+            System.Console.WriteLine("DADOS CARREGADOS DO ARQUIVO PESSOAL = {0}", text);
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+
         }
 
-        public class ConversionToDateTime                                      //tentando acertar o Try Catch com as conversões do DateTime.Convert
+        public class ConversionToDateTime                                      //tentando acertar o Try Catch para tratar Excessões com as conversões do DateTime.Convert
         {
             public static void ConvertToDateTime(string dtnascimento)
             {

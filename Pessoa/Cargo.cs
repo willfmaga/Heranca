@@ -19,14 +19,17 @@ namespace Cadastro
         }
 
         public string NomeDoCargo { get; private set; }
+
         public string DescricaoDoCargo { get; private set; }
+
         public decimal Salario { get; private set; }
 
-        public virtual decimal CalculaSalario()
-        {
-            return Salario;
-
-        }
+            public virtual decimal CalculaSalario()
+            {
+                return Salario;
+            }
+          
+       
         public void Gravar()
         {
             if (!Directory.Exists(PASTA))
@@ -37,10 +40,16 @@ namespace Cadastro
             Console.WriteLine(File.Exists(PATHFILE));
             File.WriteAllText(PATHFILE, "CadastroFuncionario");
             Console.WriteLine(File.Exists(PATHFILE));
-            
 
             //salva em um arquivo de txt
             File.WriteAllText(PATHFILE, JsonConvert.SerializeObject(this) + "\n");
+
+            //ler do arquivo salvo em txt
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+            string text = System.IO.File.ReadAllText(@"c:\CADASTRO FUNCIONARIO\CadastroFuncionario.txt");
+            System.Console.WriteLine("DADOS CARREGADOS DO ARQUIVO FUNCIONÁRIOS = {0}", text);
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+
         }
     }
 }
