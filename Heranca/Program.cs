@@ -19,13 +19,18 @@ namespace Aula
 
         private static void CadastroCargo()
         {
-            Escrever("");
+            Escrever("***Bem vindo ao sistema de cadastro Cargos e Salário!***");
+            Escrever("----------------------------");
             Escrever("Digite o Cargo Exercido:");
+            Escrever("----------------------------");
             Escrever("1 - Vendedor");
             Escrever("2 - ADM");
             Escrever("3 - Analista TI");
+            Escrever("----------------------------");
             Escrever("4 - Sair");
-            Escrever("5 - Voltar Para Cadastro Pessoal");
+            Escrever("5 - Ir Para Cadastro Pessoal");
+            Escrever("----------------------------");
+
 
             string escolha = Console.ReadLine();
 
@@ -143,15 +148,19 @@ namespace Aula
 
         private static void CadastroPessoal()
         {
-            Escrever("Bem vindo ao sistema de cadastro pessoas");
-
+            Escrever("***Bem vindo ao sistema de cadastro de Pessoal!***");
+            Escrever("---------------------------");
             Escrever("Escolha uma das opcoes:");
-            Escrever("");
+            Escrever("---------------------------");
             Escrever("1 - Pessoa");
             Escrever("2 - Pessoa Juridica");
             Escrever("3 - Pessoa Fisica");
+            Escrever("---------------------------");
             Escrever("4 - Sair");
-                string escolha = Console.ReadLine();
+            Escrever("5 - Ir Para Cadastro Cargos");
+            Escrever("---------------------------");
+
+            string escolha = Console.ReadLine();
 
             switch (escolha)
             {
@@ -178,6 +187,12 @@ namespace Aula
                         Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
                         Environment.Exit(0);
                     }
+                    break;
+
+
+                case "5":
+                    Console.Clear();
+                    CadastroCargo();
                     break;
             }
 
