@@ -6,7 +6,7 @@ namespace Aula
 {
     public class PessoaJuridica : Pessoa
     {
-        public PessoaJuridica(string nome, string sobrenome, string nacionalidade, string cnpj, DateTime dataNascimento)
+        public PessoaJuridica(string nome, string sobrenome, string nacionalidade, int cnpj, DateTime dataNascimento)
                                
                               : base(nome, sobrenome, nacionalidade, dataNascimento)
         {
@@ -22,7 +22,7 @@ namespace Aula
 
         public string Nacionalidade { get; private set; }
 
-        public string CNPJ { get; private set; }
+        public int CNPJ { get; private set; }
 
     }
 }
