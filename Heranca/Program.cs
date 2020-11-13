@@ -1,6 +1,7 @@
 ﻿using Cadastro;
 using System;
 using System.IO;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
 
@@ -64,7 +65,6 @@ namespace Aula
                     Console.Clear();
                     Console.WriteLine("***Cargo Não Cadastrado!***");
                     break;
-
                     
             }
             Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
@@ -74,6 +74,7 @@ namespace Aula
             CadastroCargo();
         }
         private static void CadastroVendedorCompleto()
+
         {
             Escrever("Digite o Nome do Cargo:");
             string nome = Console.ReadLine();
@@ -83,24 +84,33 @@ namespace Aula
             string descricao = Console.ReadLine();
             descricao = descricao.ToUpper();
 
-            Escrever("Digite o Salário");
-            decimal salario = Convert.ToDecimal(Console.ReadLine());
+            try 
+            {
+                Escrever("Digite o Salário");
+                decimal salario = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("Digite o Total de Vendas deste Mês:");
-            decimal totalVendas = Convert.ToDecimal(Console.ReadLine());
+                Escrever("Digite o Total de Vendas deste Mês:");
+                decimal totalVendas = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("Digite a Porcentagem Ganha por Vendas:");
-            decimal porc = Convert.ToDecimal(Console.ReadLine());
+                Escrever("Digite a Porcentagem Ganha por Vendas:");
+                decimal porc = Convert.ToDecimal(Console.ReadLine());
 
-            Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
+                Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
 
-            Escrever("------------------------------------------------------------------------------------------------------------------------");
-            Escrever("Seu Salário Este Mês Mais Comissão Será de:");
-            Console.WriteLine("-------");
-            Escrever(vend.CalculaSalario().ToString());
-            Console.WriteLine("-------");
-            vend.Gravar();
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("Seu Salário Este Mês Mais Comissão Será de:");
+                Console.WriteLine("-------");
+                Escrever(vend.CalculaSalario().ToString());
+                Console.WriteLine("-------");
+                vend.Gravar();
+            }catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***VENDEDOR: Por Favor! Digite apenas números nos campos (SALÁRIO), (TOTAL DE VENDAS) e (PORCENTAGEM GANHA)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
 
+                CadastroVendedorCompleto();
+            }
         }
 
         private static void CadastroADMCompleto()
@@ -113,22 +123,32 @@ namespace Aula
             string descricao = Console.ReadLine();
             descricao = descricao.ToUpper();
 
-            Escrever("Digite o Salário:");
-            decimal salario = Convert.ToDecimal(Console.ReadLine());
+            try
+            {
+                Escrever("Digite o Salário:");
+                decimal salario = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("Se faltou, digite a quantidae de dias:");
-            int diasFalta = Convert.ToInt32(Console.ReadLine());
+                Escrever("Se faltou, digite a quantidae de dias:");
+                int diasFalta = Convert.ToInt32(Console.ReadLine());
 
-            ADM adm = new ADM(nome, descricao, salario, diasFalta);
+                ADM adm = new ADM(nome, descricao, salario, diasFalta);
 
-            Escrever("------------------------------------------------------------------------------------------------------------------------");
-            Escrever("Seu Salário Este Mês Será de:");
-            Console.WriteLine("-------");
-            Escrever(adm.CalculaSalario().ToString());
-            Console.WriteLine("-------");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("Seu Salário Este Mês Será de:");
+                Console.WriteLine("-------");
+                Escrever(adm.CalculaSalario().ToString());
+                Console.WriteLine("-------");
 
-            adm.Gravar();
-
+                adm.Gravar();
+            }
+            catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***ADM: Por Favor! Digite apenas números nos campos (SALÁRIO) e (FALTA)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+               
+                CadastroADMCompleto();
+            }
         }
 
         private static void CadastroAnalistaTICompleto()
@@ -141,24 +161,35 @@ namespace Aula
             string descricao = Console.ReadLine();
             descricao = descricao.ToUpper();
 
-            Escrever("Digite o Salário:");
-            decimal salario = Convert.ToDecimal(Console.ReadLine());      
+            try
+            {
+                Escrever("Digite o Salário:");
+                decimal salario = Convert.ToDecimal(Console.ReadLine());
 
-            Escrever("Digite o Total de Horas Extras Feitas este Mês:");
-            int horasExtras = Convert.ToInt32(Console.ReadLine());
+                Escrever("Digite o Total de Horas Extras Feitas este Mês:");
+                int horasExtras = Convert.ToInt32(Console.ReadLine());
 
-            Escrever("Digite o Total de Dias Trabalhados este Mês:");
-            int diasTrabalhados = Convert.ToInt32(Console.ReadLine());
+                Escrever("Digite o Total de Dias Trabalhados este Mês:");
+                int diasTrabalhados = Convert.ToInt32(Console.ReadLine());
 
+                AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
+
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
+                Console.WriteLine("-------");
+                Escrever(TI.CalculaSalario().ToString());
+                Console.WriteLine("-------");
+                TI.Gravar();
+            }
+            catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***ANALISTA TI: Por Favor! Digite apenas números nos campos (SALÁRIO), (HORAS EXTRAS) e (DIAS TRABALHADOS)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+
+                CadastroAnalistaTICompleto();
+            }
             
-            AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
-
-            Escrever("------------------------------------------------------------------------------------------------------------------------");
-            Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
-            Console.WriteLine("-------");
-            Escrever(TI.CalculaSalario().ToString());
-            Console.WriteLine("-------");
-            TI.Gravar();
 
         }
 
@@ -232,24 +263,43 @@ namespace Aula
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
 
-            Escrever("Digite sua Data de Nascimento:");
-            DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
+            try
+            {
+                Escrever("Digite sua Data de Nascimento:");
+                DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite sua Nacionalidade:");
-            string nacionalidade = Console.ReadLine();
-            nacionalidade = nacionalidade.ToUpper();
+                Escrever("Digite sua Nacionalidade:");
+                string nacionalidade = Console.ReadLine();
+                nacionalidade = nacionalidade.ToUpper();
+                try
+                {
+                    Escrever("Digite o RG:");
+                    int rg = int.Parse(Console.ReadLine());
 
-            Escrever("Digite o RG:");
-            string rg = Console.ReadLine();
-            rg = rg.ToUpper();
-            
-            Escrever("Digite o CPF:");
-            string cpf = Console.ReadLine();
-            cpf = cpf.ToUpper();
+                    Escrever("Digite o CPF:");
+                    int cpf = int.Parse(Console.ReadLine());
 
-            PessoaFisica pf = new PessoaFisica(n, sobrenome, cpf, rg, nacionalidade,dtnascimento);
+                    PessoaFisica pf = new PessoaFisica(n, sobrenome, cpf, rg, nacionalidade, dtnascimento);
 
-            pf.Gravar();
+                    pf.Gravar();
+                }
+                catch
+                {
+                    Escrever("------------------------------------------------------------------------------------------------------------------------");
+                    Console.WriteLine("***CADASTRO PESSOA FÍSICA: Digite apenas 'NÚMEROS' para (RG) e (CPF)***");
+                    Escrever("------------------------------------------------------------------------------------------------------------------------");
+                    CadastroPessoaFisicaCompleto();
+                }
+            }
+            catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***CADASTRO PESSOA FÍSICA: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
+                    " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                CadastroPessoaFisicaCompleto();
+
+            }
         }
 
         private static void CadastroPessoaJuridicaCompleto()
@@ -262,20 +312,39 @@ namespace Aula
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
 
-            Escrever("Digite sua Data de Nascimento:");
-            DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
+            try
+            {
+                Escrever("Digite sua Data de Nascimento:");
+                DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite sua Nacionalidade:");
-            string nacionalidade = Console.ReadLine();
-            nacionalidade = nacionalidade.ToUpper();
+                Escrever("Digite sua Nacionalidade:");
+                string nacionalidade = Console.ReadLine();
+                nacionalidade = nacionalidade.ToUpper();
+                try
+                {
+                    Escrever("Digite o CNPJ:");
+                    int cnpj = Convert.ToInt32(Console.ReadLine());
 
-            Escrever("Digite o CNPJ:");
-            string cnpj = Console.ReadLine();
-            cnpj = cnpj.ToUpper();
+                    PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade, cnpj, dtnascimento);
 
-            PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade,cnpj,dtnascimento);
-
-            pj.Gravar();
+                    pj.Gravar();
+                }
+                catch
+                {
+                    Escrever("------------------------------------------------------------------------------------------------------------------------");
+                    Console.WriteLine("***CADASTRO PESSOA JURÍDICA: Digite apenas 'NÚMEROS' para (CNPJ)***");
+                    Escrever("------------------------------------------------------------------------------------------------------------------------");
+                    CadastroPessoaJuridicaCompleto();
+                }
+            }
+            catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***CADASTRO PESSOA JURÍDICA: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
+                    " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                CadastroPessoaJuridicaCompleto();
+            }
         }
 
         private static void CadastroPessoaCompleto()
@@ -287,17 +356,31 @@ namespace Aula
             Escrever("Digite seu sobrenome");
             string sobrenome = Console.ReadLine();
             sobrenome = sobrenome.ToUpper();
-            
-            Escrever("Digite sua Data de Nascimento");
-            DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            Escrever("Digite sua Nacionalidade:");
-            string nacionalidade = Console.ReadLine();
-            nacionalidade = nacionalidade.ToUpper();
-          
-            Pessoa pes = new Pessoa(n, sobrenome, nacionalidade, dtnascimento);
+            try
+            {
+                Escrever("Digite sua Data de Nascimento");
+                DateTime dtnascimento = Convert.ToDateTime(Console.ReadLine());
 
-            pes.Gravar();
+                Escrever("Digite sua Nacionalidade:");
+                string nacionalidade = Console.ReadLine();
+                nacionalidade = nacionalidade.ToUpper();
+
+                Pessoa pes = new Pessoa(n, sobrenome, nacionalidade, dtnascimento);
+
+                pes.Gravar();
+
+            }
+            catch
+            {
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("***CADASTRO PESSOAL: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
+                    " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
+                Escrever("------------------------------------------------------------------------------------------------------------------------");
+
+                CadastroPessoaCompleto();
+
+            }
         }
 
         static void Escrever(string mensagemParaPrintarNaTela)
