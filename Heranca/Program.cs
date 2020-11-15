@@ -252,6 +252,8 @@ namespace Aula
             Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
             Console.ReadKey();
             Console.Clear();
+
+            CadastroCargo();
         }
         private static void CadastroPessoaFisicaCompleto()
         {
