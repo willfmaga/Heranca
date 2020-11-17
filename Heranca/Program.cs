@@ -65,8 +65,8 @@ namespace Aula
                     Console.Clear();
                     Console.WriteLine("***Cargo Não Cadastrado!***");
                     break;
-                    
             }
+
             Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
             Console.ReadKey();
             Console.Clear();
@@ -189,8 +189,6 @@ namespace Aula
 
                 CadastroAnalistaTICompleto();
             }
-            
-
         }
 
         private static void CadastroPessoal()
@@ -236,7 +234,6 @@ namespace Aula
                     }
                     break;
 
-
                 case "5":
                     Console.Clear();
                     CadastroCargo();
@@ -273,25 +270,17 @@ namespace Aula
                 Escrever("Digite sua Nacionalidade:");
                 string nacionalidade = Console.ReadLine();
                 nacionalidade = nacionalidade.ToUpper();
-                try
-                {
+               
                     Escrever("Digite o RG:");
-                    int rg = int.Parse(Console.ReadLine());
+                    string rg = Console.ReadLine();
 
                     Escrever("Digite o CPF:");
-                    int cpf = int.Parse(Console.ReadLine());
+                    string cpf = Console.ReadLine();
 
                     PessoaFisica pf = new PessoaFisica(n, sobrenome, cpf, rg, nacionalidade, dtnascimento);
 
                     pf.Gravar();
-                }
-                catch
-                {
-                    Escrever("------------------------------------------------------------------------------------------------------------------------");
-                    Console.WriteLine("***CADASTRO PESSOA FÍSICA: Digite apenas 'NÚMEROS' para (RG) e (CPF)***");
-                    Escrever("------------------------------------------------------------------------------------------------------------------------");
-                    CadastroPessoaFisicaCompleto();
-                }
+
             }
             catch
             {
@@ -322,22 +311,14 @@ namespace Aula
                 Escrever("Digite sua Nacionalidade:");
                 string nacionalidade = Console.ReadLine();
                 nacionalidade = nacionalidade.ToUpper();
-                try
-                {
+                
                     Escrever("Digite o CNPJ:");
-                    int cnpj = Convert.ToInt32(Console.ReadLine());
+                    string cnpj = Console.ReadLine();
 
-                    PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade, cnpj, dtnascimento);
+                PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade, cnpj, dtnascimento);
 
                     pj.Gravar();
-                }
-                catch
-                {
-                    Escrever("------------------------------------------------------------------------------------------------------------------------");
-                    Console.WriteLine("***CADASTRO PESSOA JURÍDICA: Digite apenas 'NÚMEROS' para (CNPJ)***");
-                    Escrever("------------------------------------------------------------------------------------------------------------------------");
-                    CadastroPessoaJuridicaCompleto();
-                }
+
             }
             catch
             {
@@ -391,5 +372,4 @@ namespace Aula
         }
 
     }
-
 }
