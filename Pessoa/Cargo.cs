@@ -45,6 +45,7 @@ namespace Cadastro
             File.WriteAllText(PATHFILE, JsonConvert.SerializeObject(this) + "\n");
 
             //ler do arquivo salvo em txt
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             string text = System.IO.File.ReadAllText(@"c:\CADASTRO FUNCIONARIO\CadastroFuncionario.txt");
             System.Console.WriteLine("DADOS CARREGADOS DO ARQUIVO FUNCIONÁRIOS = {0}", text);
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
