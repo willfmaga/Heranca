@@ -112,9 +112,12 @@ namespace Aula
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Mais Comissão Será de:");
-                Console.WriteLine("-------");
-                Escrever(vend.CalculaSalario().ToString());
-                Console.WriteLine("-------");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("---------------------");
+                Escrever("R$"+ vend.CalculaSalario().ToString());
+                Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+
                 vend.Gravar();
             }catch
             {
@@ -150,9 +153,11 @@ namespace Aula
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Será de:");
-                Console.WriteLine("-------");
-                Escrever(adm.CalculaSalario().ToString());
-                Console.WriteLine("-------");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("--------------------");
+                Escrever("R$" + adm.CalculaSalario().ToString() + ",00");
+                Console.WriteLine("--------------------");
+                Console.ForegroundColor = ConsoleColor.Magenta;
 
                 adm.Gravar();
             }
@@ -194,10 +199,14 @@ namespace Aula
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
-                Console.WriteLine("-------");
-                Escrever(TI.CalculaSalario().ToString());
-                Console.WriteLine("-------");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;   
+                Console.WriteLine("-------------------");             
+                Escrever("R$" + TI.CalculaSalario().ToString()+",00");
+                Console.WriteLine("-------------------");             
+                Console.ForegroundColor = ConsoleColor.Magenta;
+
                 TI.Gravar();
+
             }
             catch
             {
