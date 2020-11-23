@@ -61,3 +61,12 @@ C:\Users\Mario Torres\Desktop\Heranca-Desenvolvimento\Pessoa\obj\Debug\netcoreap
 C:\Users\Mario Torres\Desktop\Heranca-Desenvolvimento\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.csproj.CoreCompileInputs.cache
 C:\Users\Mario Torres\Desktop\Heranca-Desenvolvimento\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.dll
 C:\Users\Mario Torres\Desktop\Heranca-Desenvolvimento\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.pdb
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.dll
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.pdb
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.deps.json
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.dll
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\bin\Debug\netcoreapp3.1\Cadastro.pdb
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.csprojAssemblyReference.cache
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.AssemblyInfoInputs.cache
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.AssemblyInfo.cs
+C:\Users\Mario Torres\Documents\Visual Studio 2019\Projetos Paralelos\Heranca\Pessoa\obj\Debug\netcoreapp3.1\Cadastro.csproj.CoreCompileInputs.cache

@@ -51,7 +51,6 @@ namespace Aula
 
             //ler do arquivo salvo em txt
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             string text = System.IO.File.ReadAllText(@"c:\CADASTRO PESSOAL\CadastroUsuario.txt");
             System.Console.WriteLine("DADOS CARREGADOS DO ARQUIVO PESSOAL = {0}", text);
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
