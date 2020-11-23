@@ -12,8 +12,8 @@ namespace Aula
         static void Main()
         {
             Console.Title = "CADASTRO DE PESSOAL, CARGOS E SALÁRIOS";
-            Console.BackgroundColor = ConsoleColor.DarkGray;
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
 
             CadastroPessoal();
@@ -25,11 +25,12 @@ namespace Aula
 
         private static void CadastroCargo()
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
             Escrever("\t\t\t\t***Bem vindo ao sistema de cadastro Cargos e Salários!***");
             Escrever("------------------------------------------------------------------------------------------------------------------------");
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Escrever("Digite o Cargo Exercido:");
+            Console.ForegroundColor = ConsoleColor.White;
             Escrever("----------------------------");
             Escrever("1 - Vendedor");
             Escrever("2 - ADM");
@@ -60,7 +61,7 @@ namespace Aula
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
-                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.ForegroundColor = ConsoleColor.White;
                         Environment.Exit(0);
                      }
                     break;
@@ -74,12 +75,11 @@ namespace Aula
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("***Cargo Não Cadastrado!***");
-                    Console.ForegroundColor = ConsoleColor.Black;
                     break;
             }
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.ReadKey();
             Console.Clear();
 
@@ -110,7 +110,7 @@ namespace Aula
                 Vendedor vend = new Vendedor(nome, descricao, salario, totalVendas, porc);
                 
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Mais Comissão Será de:");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("---------------------");
@@ -125,7 +125,7 @@ namespace Aula
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("***VENDEDOR: Por Favor! Digite apenas números nos campos (SALÁRIO), (TOTAL DE VENDAS) e (PORCENTAGEM GANHA)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
                 CadastroVendedorCompleto();
             }
         }
@@ -151,7 +151,7 @@ namespace Aula
                 ADM adm = new ADM(nome, descricao, salario, diasFalta);
 
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Será de:");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("--------------------");
@@ -167,7 +167,7 @@ namespace Aula
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("***ADM: Por Favor! Digite apenas números nos campos (SALÁRIO) e (FALTA)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
 
                 CadastroADMCompleto();
             }
@@ -197,7 +197,7 @@ namespace Aula
                 AnalistaTI TI = new AnalistaTI(nome, descricao, salario, horasExtras, diasTrabalhados);
 
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Escrever("------------------------------------------------------------------------------------------------------------------------");
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
                 Escrever("Seu Salário Este Mês Mais Horas Extras Será de:");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;   
                 Console.WriteLine("-------------------");             
@@ -214,18 +214,19 @@ namespace Aula
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("***ANALISTA TI: Por Favor! Digite apenas números nos campos (SALÁRIO), (HORAS EXTRAS) e (DIAS TRABALHADOS)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
                 CadastroAnalistaTICompleto();
             }
         }
 
         private static void CadastroPessoal()
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
             Escrever("\t\t\t\t***Bem vindo ao sistema de cadastro de Pessoal!***");
             Escrever("------------------------------------------------------------------------------------------------------------------------");
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Escrever("Escolha uma das Opções:");
+            Console.ForegroundColor = ConsoleColor.White;
             Escrever("---------------------------");
             Escrever("1 - Pessoa");
             Escrever("2 - Pessoa Juridica");
@@ -261,7 +262,7 @@ namespace Aula
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.WriteLine("Aplicação sendo encerrada, digite uma tecla para finalizar.");
-                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.ForegroundColor = ConsoleColor.White;
                         Environment.Exit(0);
                     }
                     break;
@@ -277,11 +278,9 @@ namespace Aula
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("***Opção Inválida!***");
-                Console.ForegroundColor = ConsoleColor.Black;
 
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
-                Console.ForegroundColor = ConsoleColor.Black;
                 Console.ReadKey();
                 Console.Clear();
 
@@ -289,7 +288,6 @@ namespace Aula
             }
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("***APERTE ENTER PARA CONTINUAR!***");
-            Console.ForegroundColor = ConsoleColor.Black;
             Console.ReadKey();
             Console.Clear();
 
@@ -322,9 +320,10 @@ namespace Aula
                 string cpf = Console.ReadLine();
                 cpf = cpf.ToUpper();
 
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
                 PessoaFisica pf = new PessoaFisica(n, sobrenome, cpf, rg, nacionalidade, dtnascimento);
-
-                    pf.Gravar();
+                pf.Gravar();
 
             }
             catch
@@ -335,7 +334,7 @@ namespace Aula
                 Console.WriteLine("***CADASTRO PESSOA FÍSICA: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
                     " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
                 CadastroPessoaFisicaCompleto();
 
             }
@@ -363,12 +362,12 @@ namespace Aula
                 Escrever("Digite o CNPJ:");
                 string cnpj = Console.ReadLine();
                 cnpj = cnpj.ToUpper();
-                
-                
-               
-                PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade, cnpj, dtnascimento);
 
-                    pj.Gravar();
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
+                PessoaJuridica pj = new PessoaJuridica(n, sobrenome, nacionalidade, cnpj, dtnascimento);
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                pj.Gravar();
             }
             catch
             {
@@ -377,10 +376,10 @@ namespace Aula
                 Console.WriteLine("***CADASTRO PESSOA JURÍDICA: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
                     " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
+
                 CadastroPessoaJuridicaCompleto();
             }
-            
         }
 
         private static void CadastroPessoaCompleto()
@@ -402,8 +401,10 @@ namespace Aula
                 string nacionalidade = Console.ReadLine();
                 nacionalidade = nacionalidade.ToUpper();
 
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Escrever("\n------------------------------------------------------------------------------------------------------------------------");
                 Pessoa pes = new Pessoa(n, sobrenome, nacionalidade, dtnascimento);
-
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 pes.Gravar();
 
             }
@@ -414,7 +415,7 @@ namespace Aula
                 Console.WriteLine("***CADASTRO PESSOAL: Por Favor! Digite um Formato 'DATA' correto no campo (DATA DE NASCIMENTO)" +
                     " Utilize entre DIA, MÊS e ANO OS FORMATOS: ( /, -, OU, 01 de janeiro de 1900)***");
                 Escrever("------------------------------------------------------------------------------------------------------------------------");
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
                 CadastroPessoaCompleto();
             }
         }
