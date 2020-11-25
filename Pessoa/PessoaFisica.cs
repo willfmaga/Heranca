@@ -35,7 +35,7 @@ namespace Aula
             string RG = "0123456789x";
             bool Sucesso;
 
-            PessoaFisica RegGeral = new PessoaFisica(nome,sobrenome,cpf,rg,nacionalidade,dataNascimento); 
+            PessoaFisica RegGeral = new PessoaFisica(nome, sobrenome, cpf, rg, nacionalidade, dataNascimento); 
             PessoaFisica RegFederal = new PessoaFisica(nome, sobrenome, cpf, rg, nacionalidade, dataNascimento);
 
             Sucesso = Int64.TryParse(CPF, out num);
