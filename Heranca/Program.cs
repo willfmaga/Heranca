@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
 
-namespace Aula
+namespace Aula                               //null
 {
     class Program
     {
@@ -38,7 +38,7 @@ namespace Aula
             Escrever("----------------------------");
             Escrever("4 - Sair");
             Escrever("5 - Ir Para Cadastro Pessoal");
-            Escrever("----------------------------");
+            Escrever("----------------------------");     
 
             string escolha = Console.ReadLine();
 
