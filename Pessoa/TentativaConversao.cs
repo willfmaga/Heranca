@@ -29,7 +29,6 @@ namespace Aula
 
         public string RG { get; private set; }
 
-
         public Int64 Num { get; private set; }
 
 
